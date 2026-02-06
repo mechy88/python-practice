@@ -1,0 +1,438 @@
+2026-02-02 11:29:48 [DEBUG] root - ------------------------------------------------------------
+2026-02-02 11:29:48 [DEBUG] root - Logging initialized at 2026-02-02T11:29:48.591081
+2026-02-02 11:29:48 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-02 11:29:48 [INFO] __main__ - ============================================================
+2026-02-02 11:29:48 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-02 11:29:48 [INFO] __main__ - ============================================================
+2026-02-02 11:29:48 [INFO] __main__ - Processing 1 date(s)
+2026-02-02 11:29:48 [DEBUG] scraper - SGXScraper initialized
+2026-02-02 11:29:48 [DEBUG] scraper - Output directory: data
+2026-02-02 11:29:48 [INFO] __main__ - Processing date: 2026-01-30
+2026-02-02 11:29:48 [INFO] scraper - Downloading all files for 2026-01-30
+2026-02-02 11:29:48 [INFO] scraper - Downloading WEBPXTICK_DT: WEBPXTICK_DT-20260130.zip
+2026-02-02 11:29:48 [DEBUG] scraper - Estimated ID for WEBPXTICK_DT on 2026-01-30: 4182 (base: 4182, delta: 0)
+2026-02-02 11:29:48 [DEBUG] scraper - Scanning for WEBPXTICK_DT-20260130.zip around ID 4182
+2026-02-02 11:29:48 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-02 11:29:49 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip HTTP/1.1" 200 0
+2026-02-02 11:29:49 [DEBUG] scraper - Found WEBPXTICK_DT-20260130.zip at ID 4182
+2026-02-02 11:29:49 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip
+2026-02-02 11:29:49 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip HTTP/1.1" 200 11966086
+2026-02-02 11:29:50 [INFO] scraper - Downloaded: WEBPXTICK_DT-20260130.zip (11,966,086 bytes)
+2026-02-02 11:29:50 [INFO] scraper - Downloading TC: TC_20260130.txt
+2026-02-02 11:29:50 [DEBUG] scraper - Estimated ID for TC on 2026-01-30: 4433 (base: 4433, delta: 0)
+2026-02-02 11:29:50 [DEBUG] scraper - Scanning for TC_20260130.txt around ID 4433
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 0
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-02 11:29:51 [DEBUG] scraper - Found TC_20260130.txt at ID 4433
+2026-02-02 11:29:51 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 1665
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /CustomErrorPage.aspx HTTP/1.1" 200 1098
+2026-02-02 11:29:51 [WARNING] scraper - Size mismatch: expected 1098, got 2207
+2026-02-02 11:29:51 [DEBUG] scraper - Download attempt 2/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 1665
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /CustomErrorPage.aspx HTTP/1.1" 200 1098
+2026-02-02 11:29:51 [WARNING] scraper - Size mismatch: expected 1098, got 2207
+2026-02-02 11:29:51 [DEBUG] scraper - Download attempt 3/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 1665
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /CustomErrorPage.aspx HTTP/1.1" 200 1098
+2026-02-02 11:29:51 [WARNING] scraper - Size mismatch: expected 1098, got 2207
+2026-02-02 11:29:51 [ERROR] scraper - Failed to download after 3 attempts: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-02 11:29:51 [INFO] scraper - Downloading TickData_structure: TickData_structure.dat
+2026-02-02 11:29:51 [DEBUG] scraper - Estimated ID for TickData_structure on 2026-01-30: 4182 (base: 4182, delta: 0)
+2026-02-02 11:29:51 [DEBUG] scraper - Scanning for TickData_structure.dat around ID 4182
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4182/TickData_structure.dat HTTP/1.1" 200 0
+2026-02-02 11:29:51 [DEBUG] scraper - Found TickData_structure.dat at ID 4182
+2026-02-02 11:29:51 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4182/TickData_structure.dat
+2026-02-02 11:29:51 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4182/TickData_structure.dat HTTP/1.1" 200 706
+2026-02-02 11:29:51 [INFO] scraper - Downloaded: TickData_structure.dat (706 bytes)
+2026-02-02 11:29:51 [INFO] scraper - Downloading TC_structure: TC_structure.dat
+2026-02-02 11:29:51 [DEBUG] scraper - Estimated ID for TC_structure on 2026-01-30: 4433 (base: 4433, delta: 0)
+2026-02-02 11:29:51 [DEBUG] scraper - Scanning for TC_structure.dat around ID 4433
+2026-02-02 11:29:52 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4433/TC_structure.dat HTTP/1.1" 200 0
+2026-02-02 11:29:52 [DEBUG] scraper - Found TC_structure.dat at ID 4433
+2026-02-02 11:29:52 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_structure.dat
+2026-02-02 11:29:52 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_structure.dat HTTP/1.1" 200 628
+2026-02-02 11:29:52 [INFO] scraper - Downloaded: TC_structure.dat (628 bytes)
+2026-02-02 11:29:52 [INFO] scraper - Completed 2026-01-30: 3 succeeded, 1 failed
+2026-02-02 11:29:52 [INFO] __main__ - ============================================================
+2026-02-02 11:29:52 [INFO] __main__ - Download Summary
+2026-02-02 11:29:52 [INFO] __main__ -   Total successful: 3
+2026-02-02 11:29:52 [INFO] __main__ -   Total failed: 1
+2026-02-02 11:29:52 [INFO] __main__ - ============================================================
+2026-02-02 11:29:52 [WARNING] __main__ - Some downloads failed. Check logs for details.
+2026-02-02 11:30:27 [DEBUG] root - ------------------------------------------------------------
+2026-02-02 11:30:27 [DEBUG] root - Logging initialized at 2026-02-02T11:30:27.512921
+2026-02-02 11:30:27 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-02 11:30:27 [INFO] __main__ - ============================================================
+2026-02-02 11:30:27 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-02 11:30:27 [INFO] __main__ - ============================================================
+2026-02-02 11:30:27 [INFO] __main__ - Processing 1 date(s)
+2026-02-02 11:30:27 [DEBUG] scraper - SGXScraper initialized
+2026-02-02 11:30:27 [DEBUG] scraper - Output directory: data
+2026-02-02 11:30:27 [INFO] __main__ - Processing date: 2026-01-30
+2026-02-02 11:30:27 [INFO] scraper - Downloading all files for 2026-01-30
+2026-02-02 11:30:27 [INFO] scraper - Downloading WEBPXTICK_DT: WEBPXTICK_DT-20260130.zip
+2026-02-02 11:30:27 [DEBUG] scraper - Estimated ID for WEBPXTICK_DT on 2026-01-30: 4182 (base: 4182, delta: 0)
+2026-02-02 11:30:27 [DEBUG] scraper - Scanning for WEBPXTICK_DT-20260130.zip around ID 4182
+2026-02-02 11:30:27 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-02 11:30:27 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip HTTP/1.1" 200 0
+2026-02-02 11:30:27 [DEBUG] scraper - Found WEBPXTICK_DT-20260130.zip at ID 4182
+2026-02-02 11:30:27 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip
+2026-02-02 11:30:28 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip HTTP/1.1" 200 11966086
+2026-02-02 11:30:29 [INFO] scraper - Downloaded: WEBPXTICK_DT-20260130.zip (11,966,086 bytes)
+2026-02-02 11:30:29 [INFO] scraper - Downloading TC: TC_20260130.txt
+2026-02-02 11:30:29 [DEBUG] scraper - Estimated ID for TC on 2026-01-30: 4433 (base: 4433, delta: 0)
+2026-02-02 11:30:29 [DEBUG] scraper - Scanning for TC_20260130.txt around ID 4433
+2026-02-02 11:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 0
+2026-02-02 11:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-02 11:30:29 [DEBUG] scraper - Found TC_20260130.txt at ID 4433
+2026-02-02 11:30:29 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-02 11:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 1665
+2026-02-02 11:30:29 [INFO] scraper - File not available (redirected to error page): https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-02 11:30:29 [INFO] scraper - Downloading TickData_structure: TickData_structure.dat
+2026-02-02 11:30:29 [DEBUG] scraper - Estimated ID for TickData_structure on 2026-01-30: 4182 (base: 4182, delta: 0)
+2026-02-02 11:30:29 [DEBUG] scraper - Scanning for TickData_structure.dat around ID 4182
+2026-02-02 11:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4182/TickData_structure.dat HTTP/1.1" 200 0
+2026-02-02 11:30:29 [DEBUG] scraper - Found TickData_structure.dat at ID 4182
+2026-02-02 11:30:29 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4182/TickData_structure.dat
+2026-02-02 11:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4182/TickData_structure.dat HTTP/1.1" 200 706
+2026-02-02 11:30:29 [INFO] scraper - Downloaded: TickData_structure.dat (706 bytes)
+2026-02-02 11:30:29 [INFO] scraper - Downloading TC_structure: TC_structure.dat
+2026-02-02 11:30:29 [DEBUG] scraper - Estimated ID for TC_structure on 2026-01-30: 4433 (base: 4433, delta: 0)
+2026-02-02 11:30:29 [DEBUG] scraper - Scanning for TC_structure.dat around ID 4433
+2026-02-02 11:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4433/TC_structure.dat HTTP/1.1" 200 0
+2026-02-02 11:30:29 [DEBUG] scraper - Found TC_structure.dat at ID 4433
+2026-02-02 11:30:29 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_structure.dat
+2026-02-02 11:30:30 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_structure.dat HTTP/1.1" 200 628
+2026-02-02 11:30:30 [INFO] scraper - Downloaded: TC_structure.dat (628 bytes)
+2026-02-02 11:30:30 [INFO] scraper - Completed 2026-01-30: 3 succeeded, 1 failed
+2026-02-02 11:30:30 [INFO] __main__ - ============================================================
+2026-02-02 11:30:30 [INFO] __main__ - Download Summary
+2026-02-02 11:30:30 [INFO] __main__ -   Total successful: 3
+2026-02-02 11:30:30 [INFO] __main__ -   Total failed: 1
+2026-02-02 11:30:30 [INFO] __main__ - ============================================================
+2026-02-02 11:30:30 [WARNING] __main__ - Some downloads failed. Check logs for details.
+2026-02-02 11:31:46 [DEBUG] root - ------------------------------------------------------------
+2026-02-02 11:31:46 [DEBUG] root - Logging initialized at 2026-02-02T11:31:46.623713
+2026-02-02 11:31:46 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-02 11:31:46 [INFO] __main__ - ============================================================
+2026-02-02 11:31:46 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-02 11:31:46 [INFO] __main__ - ============================================================
+2026-02-02 11:31:46 [INFO] __main__ - Processing 1 date(s)
+2026-02-02 11:31:46 [DEBUG] scraper - SGXScraper initialized
+2026-02-02 11:31:46 [DEBUG] scraper - Output directory: data
+2026-02-02 11:31:46 [INFO] __main__ - Processing date: 2026-02-02
+2026-02-02 11:31:46 [INFO] scraper - Downloading all files for 2026-02-02
+2026-02-02 11:31:46 [INFO] scraper - Downloading WEBPXTICK_DT: WEBPXTICK_DT-20260202.zip
+2026-02-02 11:31:46 [DEBUG] scraper - Estimated ID for WEBPXTICK_DT on 2026-02-02: 4185 (base: 4182, delta: 3)
+2026-02-02 11:31:46 [DEBUG] scraper - Scanning for WEBPXTICK_DT-20260202.zip around ID 4185
+2026-02-02 11:31:46 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-02 11:31:47 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4185/WEBPXTICK_DT-20260202.zip HTTP/1.1" 200 0
+2026-02-02 11:31:47 [DEBUG] scraper - Found WEBPXTICK_DT-20260202.zip at ID 4185
+2026-02-02 11:31:47 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4185/WEBPXTICK_DT-20260202.zip
+2026-02-02 11:31:48 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4185/WEBPXTICK_DT-20260202.zip HTTP/1.1" 200 12868864
+2026-02-02 11:31:49 [INFO] scraper - Downloaded: WEBPXTICK_DT-20260202.zip (12,868,864 bytes)
+2026-02-02 11:31:49 [INFO] scraper - Downloading TC: TC_20260202.txt
+2026-02-02 11:31:49 [DEBUG] scraper - Estimated ID for TC on 2026-02-02: 4436 (base: 4433, delta: 3)
+2026-02-02 11:31:49 [DEBUG] scraper - Scanning for TC_20260202.txt around ID 4436
+2026-02-02 11:31:49 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4436/TC_20260202.txt HTTP/1.1" 302 0
+2026-02-02 11:31:49 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-02 11:31:49 [DEBUG] scraper - Found TC_20260202.txt at ID 4436
+2026-02-02 11:31:49 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4436/TC_20260202.txt
+2026-02-02 11:31:50 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4436/TC_20260202.txt HTTP/1.1" 302 1665
+2026-02-02 11:31:50 [INFO] scraper - File not available (redirected to error page): https://links.sgx.com/1.0.0/derivatives-historical/4436/TC_20260202.txt
+2026-02-02 11:31:50 [INFO] scraper - Downloading TickData_structure: TickData_structure.dat
+2026-02-02 11:31:50 [DEBUG] scraper - Estimated ID for TickData_structure on 2026-02-02: 4185 (base: 4182, delta: 3)
+2026-02-02 11:31:50 [DEBUG] scraper - Scanning for TickData_structure.dat around ID 4185
+2026-02-02 11:31:50 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4185/TickData_structure.dat HTTP/1.1" 200 0
+2026-02-02 11:31:50 [DEBUG] scraper - Found TickData_structure.dat at ID 4185
+2026-02-02 11:31:50 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4185/TickData_structure.dat
+2026-02-02 11:31:50 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4185/TickData_structure.dat HTTP/1.1" 200 706
+2026-02-02 11:31:50 [INFO] scraper - Downloaded: TickData_structure.dat (706 bytes)
+2026-02-02 11:31:50 [INFO] scraper - Downloading TC_structure: TC_structure.dat
+2026-02-02 11:31:50 [DEBUG] scraper - Estimated ID for TC_structure on 2026-02-02: 4436 (base: 4433, delta: 3)
+2026-02-02 11:31:50 [DEBUG] scraper - Scanning for TC_structure.dat around ID 4436
+2026-02-02 11:31:50 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4436/TC_structure.dat HTTP/1.1" 200 0
+2026-02-02 11:31:50 [DEBUG] scraper - Found TC_structure.dat at ID 4436
+2026-02-02 11:31:50 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4436/TC_structure.dat
+2026-02-02 11:31:50 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4436/TC_structure.dat HTTP/1.1" 200 628
+2026-02-02 11:31:50 [INFO] scraper - Downloaded: TC_structure.dat (628 bytes)
+2026-02-02 11:31:50 [INFO] scraper - Completed 2026-02-02: 3 succeeded, 1 failed
+2026-02-02 11:31:50 [INFO] __main__ - ============================================================
+2026-02-02 11:31:50 [INFO] __main__ - Download Summary
+2026-02-02 11:31:50 [INFO] __main__ -   Total successful: 3
+2026-02-02 11:31:50 [INFO] __main__ -   Total failed: 1
+2026-02-02 11:31:50 [INFO] __main__ - ============================================================
+2026-02-02 11:31:50 [WARNING] __main__ - Some downloads failed. Check logs for details.
+2026-02-06 13:30:27 [DEBUG] root - ------------------------------------------------------------
+2026-02-06 13:30:27 [DEBUG] root - Logging initialized at 2026-02-06T13:30:27.566722
+2026-02-06 13:30:27 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-06 13:30:27 [INFO] __main__ - ============================================================
+2026-02-06 13:30:27 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-06 13:30:27 [INFO] __main__ - ============================================================
+2026-02-06 13:30:27 [INFO] __main__ - Processing 1 date(s)
+2026-02-06 13:30:27 [DEBUG] scraper - SGXScraper initialized
+2026-02-06 13:30:27 [DEBUG] scraper - Output directory: data
+2026-02-06 13:30:27 [INFO] __main__ - Processing date: 2026-02-06
+2026-02-06 13:30:27 [INFO] scraper - Downloading all files for 2026-02-06
+2026-02-06 13:30:27 [INFO] scraper - Downloading WEBPXTICK_DT: WEBPXTICK_DT-20260206.zip
+2026-02-06 13:30:27 [DEBUG] scraper - Estimated ID for WEBPXTICK_DT on 2026-02-06: 4189 (base: 4182, delta: 7)
+2026-02-06 13:30:27 [DEBUG] scraper - Scanning for WEBPXTICK_DT-20260206.zip around ID 4189
+2026-02-06 13:30:27 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-06 13:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4189/WEBPXTICK_DT-20260206.zip HTTP/1.1" 200 0
+2026-02-06 13:30:29 [DEBUG] scraper - Found WEBPXTICK_DT-20260206.zip at ID 4189
+2026-02-06 13:30:29 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4189/WEBPXTICK_DT-20260206.zip
+2026-02-06 13:30:29 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4189/WEBPXTICK_DT-20260206.zip HTTP/1.1" 200 10061945
+2026-02-06 13:30:30 [INFO] scraper - Downloaded: WEBPXTICK_DT-20260206.zip (10,061,945 bytes)
+2026-02-06 13:30:30 [INFO] scraper - Downloading TC: TC_20260206.txt
+2026-02-06 13:30:30 [DEBUG] scraper - Estimated ID for TC on 2026-02-06: 4440 (base: 4433, delta: 7)
+2026-02-06 13:30:30 [DEBUG] scraper - Scanning for TC_20260206.txt around ID 4440
+2026-02-06 13:30:31 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4440/TC_20260206.txt HTTP/1.1" 302 0
+2026-02-06 13:30:31 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-06 13:30:31 [DEBUG] scraper - Found TC_20260206.txt at ID 4440
+2026-02-06 13:30:31 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4440/TC_20260206.txt
+2026-02-06 13:30:31 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4440/TC_20260206.txt HTTP/1.1" 302 1665
+2026-02-06 13:30:31 [INFO] scraper - File not available (redirected to error page): https://links.sgx.com/1.0.0/derivatives-historical/4440/TC_20260206.txt
+2026-02-06 13:30:31 [INFO] scraper - Downloading TickData_structure: TickData_structure.dat
+2026-02-06 13:30:31 [DEBUG] scraper - Estimated ID for TickData_structure on 2026-02-06: 4189 (base: 4182, delta: 7)
+2026-02-06 13:30:31 [DEBUG] scraper - Scanning for TickData_structure.dat around ID 4189
+2026-02-06 13:30:31 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4189/TickData_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:30:31 [DEBUG] scraper - Found TickData_structure.dat at ID 4189
+2026-02-06 13:30:31 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4189/TickData_structure.dat
+2026-02-06 13:30:31 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4189/TickData_structure.dat HTTP/1.1" 200 706
+2026-02-06 13:30:31 [INFO] scraper - Downloaded: TickData_structure.dat (706 bytes)
+2026-02-06 13:30:31 [INFO] scraper - Downloading TC_structure: TC_structure.dat
+2026-02-06 13:30:31 [DEBUG] scraper - Estimated ID for TC_structure on 2026-02-06: 4440 (base: 4433, delta: 7)
+2026-02-06 13:30:31 [DEBUG] scraper - Scanning for TC_structure.dat around ID 4440
+2026-02-06 13:30:32 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4440/TC_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:30:32 [DEBUG] scraper - Found TC_structure.dat at ID 4440
+2026-02-06 13:30:32 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4440/TC_structure.dat
+2026-02-06 13:30:32 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4440/TC_structure.dat HTTP/1.1" 200 628
+2026-02-06 13:30:32 [INFO] scraper - Downloaded: TC_structure.dat (628 bytes)
+2026-02-06 13:30:32 [INFO] scraper - Completed 2026-02-06: 3 succeeded, 1 failed
+2026-02-06 13:30:32 [INFO] __main__ - ============================================================
+2026-02-06 13:30:32 [INFO] __main__ - Download Summary
+2026-02-06 13:30:32 [INFO] __main__ -   Total successful: 3
+2026-02-06 13:30:32 [INFO] __main__ -   Total failed: 1
+2026-02-06 13:30:32 [INFO] __main__ - ============================================================
+2026-02-06 13:30:32 [WARNING] __main__ - Some downloads failed. Check logs for details.
+2026-02-06 13:44:43 [DEBUG] root - ------------------------------------------------------------
+2026-02-06 13:44:43 [DEBUG] root - Logging initialized at 2026-02-06T13:44:43.373177
+2026-02-06 13:44:43 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-06 13:44:43 [INFO] __main__ - ============================================================
+2026-02-06 13:44:43 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-06 13:44:43 [INFO] __main__ - ============================================================
+2026-02-06 13:44:43 [INFO] __main__ - Processing 9 date(s)
+2026-02-06 13:44:43 [DEBUG] scraper - SGXScraper initialized
+2026-02-06 13:44:43 [DEBUG] scraper - Output directory: data
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-30
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-30
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-29
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-29
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-28
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-28
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-27
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-27
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-26
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-26
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-23
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-23
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-22
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-22
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-21
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-21
+2026-02-06 13:44:43 [INFO] __main__ - Processing date: 2026-01-20
+2026-02-06 13:44:43 [INFO] __main__ - [DRY RUN] Would download files for 2026-01-20
+2026-02-06 13:44:43 [INFO] __main__ - ============================================================
+2026-02-06 13:44:43 [INFO] __main__ - Download Summary
+2026-02-06 13:44:43 [INFO] __main__ -   Total successful: 0
+2026-02-06 13:44:43 [INFO] __main__ -   Total failed: 0
+2026-02-06 13:44:43 [INFO] __main__ - ============================================================
+2026-02-06 13:44:43 [INFO] __main__ - All downloads completed successfully.
+2026-02-06 13:49:05 [DEBUG] root - ------------------------------------------------------------
+2026-02-06 13:49:05 [DEBUG] root - Logging initialized at 2026-02-06T13:49:05.660710
+2026-02-06 13:49:05 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-06 13:49:05 [INFO] __main__ - ============================================================
+2026-02-06 13:49:05 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-06 13:49:05 [INFO] __main__ - ============================================================
+2026-02-06 13:49:05 [INFO] __main__ - Processing 1 date(s)
+2026-02-06 13:49:05 [DEBUG] scraper - SGXScraper initialized
+2026-02-06 13:49:05 [DEBUG] scraper - Output directory: data
+2026-02-06 13:49:05 [INFO] __main__ - Processing date: 2026-01-30
+2026-02-06 13:49:05 [INFO] scraper - Downloading all files for 2026-01-30
+2026-02-06 13:49:05 [INFO] scraper - File already exists, skipping: data/2026-01-30/WEBPXTICK_DT-20260130.zip
+2026-02-06 13:49:05 [INFO] scraper - Downloading TC: TC_20260130.txt
+2026-02-06 13:49:05 [DEBUG] scraper - Estimated ID for TC on 2026-01-30: 4433 (base: 4433, delta: 0)
+2026-02-06 13:49:05 [DEBUG] scraper - Scanning for TC_20260130.txt around ID 4433
+2026-02-06 13:49:05 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-06 13:49:06 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 0
+2026-02-06 13:49:06 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-06 13:49:06 [DEBUG] scraper - Found TC_20260130.txt at ID 4433
+2026-02-06 13:49:06 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-06 13:49:06 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 1665
+2026-02-06 13:49:06 [INFO] scraper - File not available (redirected to error page): https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-06 13:49:06 [INFO] scraper - File already exists, skipping: data/2026-01-30/TickData_structure.dat
+2026-02-06 13:49:06 [INFO] scraper - File already exists, skipping: data/2026-01-30/TC_structure.dat
+2026-02-06 13:49:06 [INFO] scraper - Completed 2026-01-30: 3 succeeded, 1 failed
+2026-02-06 13:49:06 [INFO] __main__ - ============================================================
+2026-02-06 13:49:06 [INFO] __main__ - Download Summary
+2026-02-06 13:49:06 [INFO] __main__ -   Total successful: 3
+2026-02-06 13:49:06 [INFO] __main__ -   Total failed: 1
+2026-02-06 13:49:06 [INFO] __main__ - ============================================================
+2026-02-06 13:49:06 [WARNING] __main__ - Some downloads failed. Check logs for details.
+2026-02-06 13:49:39 [DEBUG] root - ------------------------------------------------------------
+2026-02-06 13:49:39 [DEBUG] root - Logging initialized at 2026-02-06T13:49:39.291063
+2026-02-06 13:49:39 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-06 13:49:39 [INFO] __main__ - ============================================================
+2026-02-06 13:49:39 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-06 13:49:39 [INFO] __main__ - ============================================================
+2026-02-06 13:49:39 [INFO] __main__ - Processing 1 date(s)
+2026-02-06 13:49:39 [DEBUG] scraper - SGXScraper initialized
+2026-02-06 13:49:39 [DEBUG] scraper - Output directory: data
+2026-02-06 13:49:39 [INFO] __main__ - Processing date: 2026-01-30
+2026-02-06 13:49:39 [INFO] scraper - Downloading all files for 2026-01-30
+2026-02-06 13:49:39 [INFO] scraper - Downloading WEBPXTICK_DT: WEBPXTICK_DT-20260130.zip
+2026-02-06 13:49:39 [DEBUG] scraper - Estimated ID for WEBPXTICK_DT on 2026-01-30: 4182 (base: 4182, delta: 0)
+2026-02-06 13:49:39 [DEBUG] scraper - Scanning for WEBPXTICK_DT-20260130.zip around ID 4182
+2026-02-06 13:49:39 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-06 13:49:39 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip HTTP/1.1" 200 0
+2026-02-06 13:49:39 [DEBUG] scraper - Found WEBPXTICK_DT-20260130.zip at ID 4182
+2026-02-06 13:49:39 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip
+2026-02-06 13:49:39 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4182/WEBPXTICK_DT-20260130.zip HTTP/1.1" 200 11966086
+2026-02-06 13:49:40 [INFO] scraper - Downloaded: WEBPXTICK_DT-20260130.zip (11,966,086 bytes)
+2026-02-06 13:49:40 [INFO] scraper - Downloading TC: TC_20260130.txt
+2026-02-06 13:49:40 [DEBUG] scraper - Estimated ID for TC on 2026-01-30: 4433 (base: 4433, delta: 0)
+2026-02-06 13:49:40 [DEBUG] scraper - Scanning for TC_20260130.txt around ID 4433
+2026-02-06 13:49:41 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 0
+2026-02-06 13:49:41 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-06 13:49:41 [DEBUG] scraper - Found TC_20260130.txt at ID 4433
+2026-02-06 13:49:41 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-06 13:49:41 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_20260130.txt HTTP/1.1" 302 1665
+2026-02-06 13:49:41 [INFO] scraper - File not available (redirected to error page): https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_20260130.txt
+2026-02-06 13:49:41 [INFO] scraper - Downloading TickData_structure: TickData_structure.dat
+2026-02-06 13:49:41 [DEBUG] scraper - Estimated ID for TickData_structure on 2026-01-30: 4182 (base: 4182, delta: 0)
+2026-02-06 13:49:41 [DEBUG] scraper - Scanning for TickData_structure.dat around ID 4182
+2026-02-06 13:49:41 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4182/TickData_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:49:41 [DEBUG] scraper - Found TickData_structure.dat at ID 4182
+2026-02-06 13:49:41 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4182/TickData_structure.dat
+2026-02-06 13:49:41 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4182/TickData_structure.dat HTTP/1.1" 200 706
+2026-02-06 13:49:41 [INFO] scraper - Downloaded: TickData_structure.dat (706 bytes)
+2026-02-06 13:49:41 [INFO] scraper - Downloading TC_structure: TC_structure.dat
+2026-02-06 13:49:41 [DEBUG] scraper - Estimated ID for TC_structure on 2026-01-30: 4433 (base: 4433, delta: 0)
+2026-02-06 13:49:41 [DEBUG] scraper - Scanning for TC_structure.dat around ID 4433
+2026-02-06 13:49:41 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4433/TC_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:49:41 [DEBUG] scraper - Found TC_structure.dat at ID 4433
+2026-02-06 13:49:41 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4433/TC_structure.dat
+2026-02-06 13:49:41 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4433/TC_structure.dat HTTP/1.1" 200 628
+2026-02-06 13:49:41 [INFO] scraper - Downloaded: TC_structure.dat (628 bytes)
+2026-02-06 13:49:41 [INFO] scraper - Completed 2026-01-30: 3 succeeded, 1 failed
+2026-02-06 13:49:41 [INFO] __main__ - ============================================================
+2026-02-06 13:49:41 [INFO] __main__ - Download Summary
+2026-02-06 13:49:41 [INFO] __main__ -   Total successful: 3
+2026-02-06 13:49:41 [INFO] __main__ -   Total failed: 1
+2026-02-06 13:49:41 [INFO] __main__ - ============================================================
+2026-02-06 13:49:41 [WARNING] __main__ - Some downloads failed. Check logs for details.
+2026-02-06 13:50:14 [DEBUG] root - ------------------------------------------------------------
+2026-02-06 13:50:14 [DEBUG] root - Logging initialized at 2026-02-06T13:50:14.720799
+2026-02-06 13:50:14 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-06 13:50:14 [INFO] __main__ - ============================================================
+2026-02-06 13:50:14 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-06 13:50:14 [INFO] __main__ - ============================================================
+2026-02-06 13:50:14 [INFO] __main__ - Processing 1 date(s)
+2026-02-06 13:50:14 [DEBUG] scraper - SGXScraper initialized
+2026-02-06 13:50:14 [DEBUG] scraper - Output directory: data
+2026-02-06 13:50:14 [INFO] __main__ - Processing date: 2026-02-06
+2026-02-06 13:50:14 [INFO] scraper - Downloading all files for 2026-02-06
+2026-02-06 13:50:14 [INFO] scraper - Downloading WEBPXTICK_DT: WEBPXTICK_DT-20260206.zip
+2026-02-06 13:50:14 [DEBUG] scraper - Estimated ID for WEBPXTICK_DT on 2026-02-06: 4189 (base: 4182, delta: 7)
+2026-02-06 13:50:14 [DEBUG] scraper - Scanning for WEBPXTICK_DT-20260206.zip around ID 4189
+2026-02-06 13:50:14 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-06 13:50:15 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4189/WEBPXTICK_DT-20260206.zip HTTP/1.1" 200 0
+2026-02-06 13:50:15 [DEBUG] scraper - Found WEBPXTICK_DT-20260206.zip at ID 4189
+2026-02-06 13:50:15 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4189/WEBPXTICK_DT-20260206.zip
+2026-02-06 13:50:15 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4189/WEBPXTICK_DT-20260206.zip HTTP/1.1" 200 10061945
+2026-02-06 13:50:15 [INFO] scraper - Downloaded: WEBPXTICK_DT-20260206.zip (10,061,945 bytes)
+2026-02-06 13:50:15 [INFO] scraper - Downloading TC: TC_20260206.txt
+2026-02-06 13:50:15 [DEBUG] scraper - Estimated ID for TC on 2026-02-06: 4440 (base: 4433, delta: 7)
+2026-02-06 13:50:15 [DEBUG] scraper - Scanning for TC_20260206.txt around ID 4440
+2026-02-06 13:50:16 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4440/TC_20260206.txt HTTP/1.1" 302 0
+2026-02-06 13:50:16 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-06 13:50:16 [DEBUG] scraper - Found TC_20260206.txt at ID 4440
+2026-02-06 13:50:16 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4440/TC_20260206.txt
+2026-02-06 13:50:16 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4440/TC_20260206.txt HTTP/1.1" 302 1665
+2026-02-06 13:50:16 [INFO] scraper - File not available (redirected to error page): https://links.sgx.com/1.0.0/derivatives-historical/4440/TC_20260206.txt
+2026-02-06 13:50:16 [INFO] scraper - Downloading TickData_structure: TickData_structure.dat
+2026-02-06 13:50:16 [DEBUG] scraper - Estimated ID for TickData_structure on 2026-02-06: 4189 (base: 4182, delta: 7)
+2026-02-06 13:50:16 [DEBUG] scraper - Scanning for TickData_structure.dat around ID 4189
+2026-02-06 13:50:16 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4189/TickData_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:50:16 [DEBUG] scraper - Found TickData_structure.dat at ID 4189
+2026-02-06 13:50:16 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4189/TickData_structure.dat
+2026-02-06 13:50:16 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4189/TickData_structure.dat HTTP/1.1" 200 706
+2026-02-06 13:50:16 [INFO] scraper - Downloaded: TickData_structure.dat (706 bytes)
+2026-02-06 13:50:16 [INFO] scraper - Downloading TC_structure: TC_structure.dat
+2026-02-06 13:50:16 [DEBUG] scraper - Estimated ID for TC_structure on 2026-02-06: 4440 (base: 4433, delta: 7)
+2026-02-06 13:50:16 [DEBUG] scraper - Scanning for TC_structure.dat around ID 4440
+2026-02-06 13:50:16 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4440/TC_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:50:16 [DEBUG] scraper - Found TC_structure.dat at ID 4440
+2026-02-06 13:50:16 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4440/TC_structure.dat
+2026-02-06 13:50:17 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4440/TC_structure.dat HTTP/1.1" 200 628
+2026-02-06 13:50:17 [INFO] scraper - Downloaded: TC_structure.dat (628 bytes)
+2026-02-06 13:50:17 [INFO] scraper - Completed 2026-02-06: 3 succeeded, 1 failed
+2026-02-06 13:50:17 [INFO] __main__ - ============================================================
+2026-02-06 13:50:17 [INFO] __main__ - Download Summary
+2026-02-06 13:50:17 [INFO] __main__ -   Total successful: 3
+2026-02-06 13:50:17 [INFO] __main__ -   Total failed: 1
+2026-02-06 13:50:17 [INFO] __main__ - ============================================================
+2026-02-06 13:50:17 [WARNING] __main__ - Some downloads failed. Check logs for details.
+2026-02-06 13:57:21 [DEBUG] root - ------------------------------------------------------------
+2026-02-06 13:57:21 [DEBUG] root - Logging initialized at 2026-02-06T13:57:21.450321
+2026-02-06 13:57:21 [DEBUG] root - Log file: /Users/miguel/Documents/Github/python-practice/webscraping-bsoup/dytech/sample/test/downloader.log
+2026-02-06 13:57:21 [INFO] __main__ - ============================================================
+2026-02-06 13:57:21 [INFO] __main__ - SGX Derivatives Data Downloader Started
+2026-02-06 13:57:21 [INFO] __main__ - ============================================================
+2026-02-06 13:57:21 [INFO] __main__ - Processing 1 date(s)
+2026-02-06 13:57:21 [DEBUG] scraper - SGXScraper initialized
+2026-02-06 13:57:21 [DEBUG] scraper - Output directory: data
+2026-02-06 13:57:21 [INFO] __main__ - Processing date: 2026-02-05
+2026-02-06 13:57:21 [INFO] scraper - Downloading all files for 2026-02-05
+2026-02-06 13:57:21 [INFO] scraper - Downloading WEBPXTICK_DT: WEBPXTICK_DT-20260205.zip
+2026-02-06 13:57:21 [DEBUG] scraper - Estimated ID for WEBPXTICK_DT on 2026-02-05: 4188 (base: 4182, delta: 6)
+2026-02-06 13:57:21 [DEBUG] scraper - Scanning for WEBPXTICK_DT-20260205.zip around ID 4188
+2026-02-06 13:57:21 [DEBUG] urllib3.connectionpool - Starting new HTTPS connection (1): links.sgx.com:443
+2026-02-06 13:57:22 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4188/WEBPXTICK_DT-20260205.zip HTTP/1.1" 200 0
+2026-02-06 13:57:22 [DEBUG] scraper - Found WEBPXTICK_DT-20260205.zip at ID 4188
+2026-02-06 13:57:22 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4188/WEBPXTICK_DT-20260205.zip
+2026-02-06 13:57:22 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4188/WEBPXTICK_DT-20260205.zip HTTP/1.1" 200 10888625
+2026-02-06 13:57:24 [INFO] scraper - Downloaded: WEBPXTICK_DT-20260205.zip (10,888,625 bytes)
+2026-02-06 13:57:24 [INFO] scraper - Downloading TC: TC_20260205.txt
+2026-02-06 13:57:24 [DEBUG] scraper - Estimated ID for TC on 2026-02-05: 4439 (base: 4433, delta: 6)
+2026-02-06 13:57:24 [DEBUG] scraper - Scanning for TC_20260205.txt around ID 4439
+2026-02-06 13:57:24 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4439/TC_20260205.txt HTTP/1.1" 302 0
+2026-02-06 13:57:24 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /CustomErrorPage.aspx HTTP/1.1" 200 0
+2026-02-06 13:57:24 [DEBUG] scraper - Found TC_20260205.txt at ID 4439
+2026-02-06 13:57:24 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4439/TC_20260205.txt
+2026-02-06 13:57:24 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4439/TC_20260205.txt HTTP/1.1" 302 1665
+2026-02-06 13:57:24 [INFO] scraper - File not available (redirected to error page): https://links.sgx.com/1.0.0/derivatives-historical/4439/TC_20260205.txt
+2026-02-06 13:57:24 [INFO] scraper - Downloading TickData_structure: TickData_structure.dat
+2026-02-06 13:57:24 [DEBUG] scraper - Estimated ID for TickData_structure on 2026-02-05: 4188 (base: 4182, delta: 6)
+2026-02-06 13:57:24 [DEBUG] scraper - Scanning for TickData_structure.dat around ID 4188
+2026-02-06 13:57:24 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4188/TickData_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:57:24 [DEBUG] scraper - Found TickData_structure.dat at ID 4188
+2026-02-06 13:57:24 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4188/TickData_structure.dat
+2026-02-06 13:57:24 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4188/TickData_structure.dat HTTP/1.1" 200 706
+2026-02-06 13:57:24 [INFO] scraper - Downloaded: TickData_structure.dat (706 bytes)
+2026-02-06 13:57:24 [INFO] scraper - Downloading TC_structure: TC_structure.dat
+2026-02-06 13:57:24 [DEBUG] scraper - Estimated ID for TC_structure on 2026-02-05: 4439 (base: 4433, delta: 6)
+2026-02-06 13:57:24 [DEBUG] scraper - Scanning for TC_structure.dat around ID 4439
+2026-02-06 13:57:25 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "HEAD /1.0.0/derivatives-historical/4439/TC_structure.dat HTTP/1.1" 200 0
+2026-02-06 13:57:25 [DEBUG] scraper - Found TC_structure.dat at ID 4439
+2026-02-06 13:57:25 [DEBUG] scraper - Download attempt 1/3: https://links.sgx.com/1.0.0/derivatives-historical/4439/TC_structure.dat
+2026-02-06 13:57:25 [DEBUG] urllib3.connectionpool - https://links.sgx.com:443 "GET /1.0.0/derivatives-historical/4439/TC_structure.dat HTTP/1.1" 200 628
+2026-02-06 13:57:25 [INFO] scraper - Downloaded: TC_structure.dat (628 bytes)
+2026-02-06 13:57:25 [INFO] scraper - Completed 2026-02-05: 3 succeeded, 1 failed
+2026-02-06 13:57:25 [INFO] __main__ - ============================================================
+2026-02-06 13:57:25 [INFO] __main__ - Download Summary
+2026-02-06 13:57:25 [INFO] __main__ -   Total successful: 3
+2026-02-06 13:57:25 [INFO] __main__ -   Total failed: 1
+2026-02-06 13:57:25 [INFO] __main__ - ============================================================
+2026-02-06 13:57:25 [WARNING] __main__ - Some downloads failed. Check logs for details.
