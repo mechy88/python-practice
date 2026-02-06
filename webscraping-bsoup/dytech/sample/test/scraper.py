@@ -41,7 +41,8 @@ class SGXScraper:
             "description": "Tick data structure specification"
         },
         "TC": {
-            "pattern": r"TC_\d{8}\.txt",
+            "pattern": r"TC\.txt",
+            "url_filename": "TC.txt",
             "name_template": "TC_{date}.txt",
             "description": "Trade Cancellation data"
         },
@@ -146,8 +147,10 @@ class SGXScraper:
         
         file_info = self.FILE_TYPES[file_type]
         
-        # Determine the expected filename
-        if "{date}" in file_info["name_template"]:
+        # Determine the URL filename (what's on the server)
+        if "url_filename" in file_info:
+            expected_name = file_info["url_filename"]
+        elif "{date}" in file_info["name_template"]:
             expected_name = file_info["name_template"].format(date=date_str)
         else:
             expected_name = file_info["name_template"]
@@ -286,13 +289,19 @@ class SGXScraper:
         
         self.logger.info(f"Downloading {file_type}: {filename}")
         
+        # Determine the URL filename (may differ from local filename)
+        if "url_filename" in file_info:
+            url_filename = file_info["url_filename"]
+        else:
+            url_filename = filename
+        
         # Try to find the file
         result = self._scan_for_file(file_type, date)
         
         if result is None:
             # Try direct URL construction as fallback
             estimated_id = self._estimate_id_for_date(file_type, date)
-            url = f"{self.BASE_URL}/{estimated_id}/{filename}"
+            url = f"{self.BASE_URL}/{estimated_id}/{url_filename}"
             self.logger.debug(f"Trying direct URL: {url}")
         else:
             file_id, found_name = result
